@@ -4,14 +4,16 @@ import { FaAsterisk } from "react-icons/fa";
 export default function Home() {
   return (
     //SP TODO - Maybe more grid rows and shit? Get stuff closer togeteh
-    <div className="flex h-screen grid grid-cols-7 grid-rows-7 gap-6 max-h-screen overflow-hidden text-white">
-      <div className="flex items-center h-1 w-25 col-start-4 row-start-3 col-span-4">
-        <TbCurrencySolana
-          className="text-sable-green-text stroke-[0.25px]"
-          size={250}
-          strokeWidth="1"
-          style={{ transform: "rotate(15deg)" }}
-        />
+    <div className="flex h-screen grid grid-cols-7 grid-rows-7 gap-0 max-h-screen overflow-hidden text-white">
+      <div className="flex items-center h-1 w-25 col-start-3 row-start-3 col-span-4">
+        <div>
+          <TbCurrencySolana
+            className="flex text-sable-green-text stroke-[0.25px]"
+            size={300}
+            // strokeWidth="1"
+            style={{ transform: "rotate(15deg)" }}
+          />
+        </div>
         <div className="text-sable-green-text text-8xl">SABLE</div>
       </div>
       <div className="text-sable-green-placeholder text-6xl col-start-3 row-start-4 col-span-5">
