@@ -2,4 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.foo{ max-width:none; }
+.foo{ 
+    max-width:none;
+    height: 50%;
+}

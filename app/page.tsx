@@ -1,24 +1,31 @@
 import { TbCurrencySolana } from "react-icons/tb";
+import { FaAsterisk } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <>
-      <div className="foo container mx-auto px-4 bg-sable-green-page-bg text-white">
-        <div className="flex flex-col w-screen h-screen justify-center items-end px-20">
-          <div className="flex items-center h-40 justify-end w-22">
-            <TbCurrencySolana
-              className="text-sable-green-text stroke-[0.25px]"
-              size={250}
-              stroke-width="1"
-              style={{ transform: "rotate(15deg)" }}
-            />
-            <div className="text-sable-green-text text-8xl">SABLE</div>
-          </div>
-          <div className="text-sable-green-placeholder text-6xl">
-            COMPLIANT BONDS
-          </div>
-        </div>
+    //SP TODO - Maybe more grid rows and shit? Get stuff closer togeteh
+    <div className="flex h-screen grid grid-cols-7 grid-rows-7 gap-6 max-h-screen overflow-hidden text-white">
+      <div className="flex items-center h-1 w-25 col-start-4 row-start-3 col-span-4">
+        <TbCurrencySolana
+          className="text-sable-green-text stroke-[0.25px]"
+          size={250}
+          strokeWidth="1"
+          style={{ transform: "rotate(15deg)" }}
+        />
+        <div className="text-sable-green-text text-8xl">SABLE</div>
       </div>
-    </>
+      <div className="text-sable-green-placeholder text-6xl col-start-3 row-start-4 col-span-5">
+        COMPLIANT BONDS
+      </div>
+      <div className="flex relative col-start-1 row-start-6 col-span-2 row-span-2 ">
+        <FaAsterisk
+          size={400}
+          className="absolute bottom-0 right-0 text-sable-green-text"
+        />
+      </div>
+      <div className="bg-sable-green-placeholder row-start-5 col-start-3 col-span-5 row-span-3 p-5 rounded-md m-5">
+        <div>IN HERE GOES THE CURRENT TINGS</div>
+      </div>
+    </div>
   );
 }
