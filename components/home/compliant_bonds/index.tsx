@@ -26,7 +26,7 @@ function CompliantBonds() {
   return (
     <ul className="flex space-x-4">
       {bonds.tokens.map((bond: any) => (
-        <div className="w-96">
+        <div className="w-96" key={bond.id.toString()}>
           <CompliantBond bond={bond} />
         </div>
       ))}

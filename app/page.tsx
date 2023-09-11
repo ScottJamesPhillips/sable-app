@@ -6,16 +6,15 @@ export default function Home() {
   return (
     //SP TODO - Maybe more grid rows and shit? Get stuff closer togeteh
     <div className="flex h-screen grid grid-cols-7 grid-rows-5 gap-0 max-h-screen overflow-hidden text-white">
-      <div className="flex items-center h-1 w-25 col-start-3 row-start-3 col-span-4">
+      <div className="flex items-center h-1 col-start-3 row-start-3 col-span-4 text-8xl">
         <TbCurrencySolana
-          className="flex text-sable-green-text stroke-[0.25px]"
-          size={300}
-          // strokeWidth="1"
+          size={400}
+          className="text-sable-green-text stroke-[0.25px]"
           style={{ transform: "rotate(15deg)" }}
         />
-        <div className="text-sable-green-text text-8xl">SABLE</div>
+        <div className="text-sable-green-text"> SABLE</div>
       </div>
-      <div className="text-sable-green-placeholder text-6xl col-start-3 row-start-3 col-span-5">
+      <div className="flex text-sable-green-placeholder text-6xl col-start-3 row-start-3 col-span-5 items-end">
         COMPLIANT BONDS
       </div>
       <div className="flex relative col-start-1 row-start-6 col-span-2 row-span-2 ">
