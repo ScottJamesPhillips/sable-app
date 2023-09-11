@@ -24,13 +24,13 @@ function CompliantBonds() {
   console.log(bonds);
 
   return (
-    <div>
-      <ul className="flex flex-row">
-        {bonds.tokens.map((bond: any) => (
+    <ul className="flex space-x-4">
+      {bonds.tokens.map((bond: any) => (
+        <div className="w-96">
           <CompliantBond bond={bond} />
-        ))}
-      </ul>
-    </div>
+        </div>
+      ))}
+    </ul>
   );
 }
 

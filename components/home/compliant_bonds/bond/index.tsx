@@ -15,7 +15,7 @@ interface CompliantBondProps {
 const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
   console.log(bond);
   return (
-    <div>
+    <div className="rounded h-full border-solid border-[1px] border-sable-green-text">
       <p>{bond.id}</p>
       <p>{bond.name}</p>
     </div>
