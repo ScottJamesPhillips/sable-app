@@ -1,5 +1,6 @@
 import { TbCurrencySolana } from "react-icons/tb";
 import { FaAsterisk } from "react-icons/fa";
+import CompliantBond from "../components/home/compliant_bonds";
 
 export default function Home() {
   return (
@@ -25,8 +26,10 @@ export default function Home() {
           className="absolute bottom-0 right-0 text-sable-green-text"
         />
       </div>
-      <div className="bg-sable-green-placeholder row-start-5 col-start-3 col-span-5 row-span-3 p-5 rounded-md m-5">
-        <div>IN HERE GOES THE CURRENT TINGS</div>
+      <div className="bg-sable-green-placeholder row-start-5 col-start-3 col-span-5 row-span-3 p-5 rounded-md m-5 flex items-stretch">
+        <ul className="flex flex-row overflow-auto">
+          <CompliantBond />
+        </ul>
       </div>
     </div>
   );
