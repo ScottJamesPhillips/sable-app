@@ -31,7 +31,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="border-solid border-[1px] border-sable-green-text px-1 rounded-md">
-              <Link href="/login" className="flex items-center">
+              <Link href="/app" className="flex items-center">
                 <div className="mx-2">
                   <BiLaptop />
                 </div>
