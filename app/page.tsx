@@ -23,7 +23,7 @@ export default function Home() {
           className="absolute bottom-0 right-0 text-sable-green-text"
         />
       </div>
-      <div className="bg-sable-green-placeholder row-start-4 col-start-3 col-span-5 row-span-2 p-5 rounded-md m-5 flex items-stretch overflow-x-auto">
+      <div className="bg-sable-green-bg row-start-4 col-start-3 col-span-5 row-span-2 p-5 rounded-md m-5 flex items-stretch overflow-x-auto">
         <CompliantBonds />
       </div>
     </div>
