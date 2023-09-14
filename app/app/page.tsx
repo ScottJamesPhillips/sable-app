@@ -1,3 +1,4 @@
+import BondsTable from "@/components/app/bonds_table";
 import CompliantBonds from "@/components/app/compliant_bonds";
 
 function AppHome() {
@@ -16,7 +17,9 @@ function AppHome() {
       </div>
 
       {/* Table */}
-      <div className="flex bg-red-200 col-start-2 row-start-3 col-span-5 row-span-3"></div>
+      <div className="flex col-start-2 row-start-3 col-span-5 row-span-3">
+        <BondsTable />
+      </div>
     </div>
   );
 }
