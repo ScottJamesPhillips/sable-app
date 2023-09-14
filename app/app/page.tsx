@@ -2,13 +2,21 @@ import CompliantBonds from "@/components/app/compliant_bonds";
 
 function AppHome() {
   return (
-    <div className="flex h-screen grid grid-cols-7 grid-rows-5 gap-0 max-h-screen overflow-hidden text-white">
-      <div className="bg-sable-green-bg row-start-1 col-start-2 col-span-5 row-span-2 p-5 rounded-md m-5 flex items-stretch overflow-x-auto">
+    <div className="flex flex-col h-screen grid grid-cols-7 grid-rows-5 gap-0 max-h-screen overflow-hidden text-white">
+      <div className="flex row-start-1 col-start-2 col-span-5 justify-between">
+        <div>Available Bonds</div>
+        <div className="flex">
+          <div className="flex mx-5 text-sable-green-text">Portfolio</div>
+          <div className="flex mx-5 text-gray-500 underline">Create Bond</div>
+        </div>
+      </div>
+      <div className="bg-sable-green-bg row-start-1 col-start-2 col-span-5 row-span-2 py-5 rounded-md my-5 flex items-stretch overflow-x-auto">
+        {/* <div>Available Bonds</div> */}
         <CompliantBonds />
       </div>
 
       {/* Table */}
-      <div className="flex bg-red-200 col-start-2 row-start-3 col-span-5 row-span-2"></div>
+      <div className="flex bg-red-200 col-start-2 row-start-3 col-span-5 row-span-3"></div>
     </div>
   );
 }

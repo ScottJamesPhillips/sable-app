@@ -9,14 +9,17 @@ import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-20 bg-sable-green-page-bg sticky top-0">
+    <div className="w-full h-20 bg-sable-green-page-bg top-0">
       <div className="foo flex justify-between container mx-auto px-5 h-full">
-        <div className="flex justify-end items-center text-sable-green-text text-2xl">
+        <a
+          href="/"
+          className="flex justify-end items-center text-sable-green-text text-2xl"
+        >
           SABLE
           <div className="p-1 mx-2 bg-[#283a3a] text-[#70a1a2] border-solid">
             Beta
           </div>
-        </div>
+        </a>
         <div className="flex justify-end content-center items-center">
           {/* <Logo /> */}
           <ul className="flex gap-x-3 items-center content-center text-sable-green-text">

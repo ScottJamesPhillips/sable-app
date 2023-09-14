@@ -2,6 +2,7 @@
 import React from "react";
 import useSWR from "swr";
 import CompliantBond from "./bond";
+import { BiSolidAddToQueue } from "react-icons/bi";
 
 //Set up SWR to run the fetcher function when calling "/api/staticdata"
 //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data
@@ -23,15 +24,31 @@ function CompliantBonds() {
   var bonds = JSON.parse(data);
   console.log(bonds);
 
-  return (
+  if (Object.keys(bonds.tokens).length < 3) {
+    return (
+      <ul className="flex space-x-4">
+        {bonds.tokens.map((bond: any) => (
+          <div className="w-96" key={bond.id.toString()}>
+            <CompliantBond bond={bond} />
+          </div>
+        ))}
+        <div className="h-full rounded-lg bg-sable-green-placeholder">
+          <div className="flex flex-col h-full group p-4 lg:p-8 w-[350px] items-center justify-center text-sable-green-secondary-text">
+            <BiSolidAddToQueue className="text-5xl" />
+            issue new bond
+          </div>
+        </div>
+      </ul>
+    );
+  } else {
     <ul className="flex space-x-4">
       {bonds.tokens.map((bond: any) => (
         <div className="w-96" key={bond.id.toString()}>
           <CompliantBond bond={bond} />
         </div>
       ))}
-    </ul>
-  );
+    </ul>; // or any other component or element
+  }
 }
 
 export default CompliantBonds;
