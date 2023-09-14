@@ -1,4 +1,5 @@
-import Navigation from "../components/navigation/navbar";
+import Navbar from "../components/navigation/navbar";
+import Footer from "../components/navigation/footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -17,8 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-sable-green-page-bg">
       <body className={`${inter.className} foo bg-black-100`}>
-        <Navigation />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
