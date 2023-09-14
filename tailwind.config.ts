@@ -15,7 +15,8 @@ const config: Config = {
       },
       colors: {
         'sable-green-text': '#01ffa0',
-        'sable-green-placeholder': '#253a38',
+        'sable-green-secondary-text':'#253a38',
+        'sable-green-placeholder': '#182524',
         'sable-green-page-bg':'#141d1d'
       },
     },

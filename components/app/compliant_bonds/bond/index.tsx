@@ -17,19 +17,19 @@ interface CompliantBondProps {
 
 const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
   return (
-    <div className="h-full rounded-lg border-solid border-[1px] border-sable-green-text">
+    <div className="h-full rounded-lg bg-sable-green-placeholder">
       <div className="h-full group p-4 lg:p-8">
         <div className="flex items-center gap-x-2 ">
           <div className="bg-sable-green-text aspect-[2/2] w-16 border-[1px] border-sable-green-text rounded-md" />
           <div>
             <div className="flex">
-              <h3 className="text-xl font-bold text-gray-50">{bond.name}</h3>
+              <h3 className="text-xl text-gray-50">{bond.name}</h3>
               <div className="flex items-center mx-4 text-l text-gray-500">
                 $TOKEN
               </div>
             </div>
             <div className="text-xs text-gray-300">{bond.supply} SUPPLY</div>
-            <a href="" className="text-xs text-gray-500 underline">
+            <a href="" className="text-xs text-gray-500 underline ">
               view on solscan
             </a>
           </div>
@@ -46,7 +46,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
               type="text"
               id="bondtype"
               value={bond.bondtype}
-              className="p-2 bg-sable-green-page-bg border border-sable-green-secondary-text text-white-900 text-xs rounded-lg block w-full"
+              className="p-2 bg-sable-green-page-bg border border-sable-green-placeholder text-white-900 text-xs rounded-lg block w-full"
               required
             />
           </div>
@@ -61,7 +61,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
               type="text"
               id="issue_date"
               value={bond.issuedate}
-              className="p-2 bg-sable-green-page-bg border border-sable-green-secondary-text text-white-900 text-xs rounded-lg block w-full"
+              className="p-2 bg-sable-green-page-bg border border-sable-green-placeholder text-white-900 text-xs rounded-lg block w-full"
               required
             />
           </div>
@@ -75,7 +75,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
             <input
               type="text"
               id="expiry_date"
-              className="p-2 bg-sable-green-page-bg border border-sable-green-secondary-text text-white-900 text-xs rounded-lg block w-full"
+              className="p-2 bg-sable-green-page-bg border border-sable-green-placeholder text-white-900 text-xs rounded-lg block w-full"
               value={bond.expirydate}
               required
             />
@@ -87,7 +87,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
             <input
               type="text"
               id="apy"
-              className="p-2 bg-sable-green-page-bg border border-sable-green-secondary-text text-white-900 text-xs rounded-lg block w-full"
+              className="p-2 bg-sable-green-page-bg border border-sable-green-placeholder text-white-900 text-xs rounded-lg block w-full"
               value={bond.apy}
               required
             />
@@ -111,7 +111,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
           <span className="text-sm font-small text-gray-50">
             250,000 $TOKEN Supply Remaining
           </span>
-          <a className="font-medium text-sable-green-secondary-text transition-all duration-300 group-hover:text-sable-green-placeholder">
+          <a className="font-medium text-sable-green-placeholder transition-all duration-300 group-hover:text-sable-green-placeholder">
             <FaNewspaper />
           </a>
         </div>

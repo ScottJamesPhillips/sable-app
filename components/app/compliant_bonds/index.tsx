@@ -10,7 +10,6 @@ const fetcher = (url: any) => fetch(url).then((res) => res.json());
 
 function CompliantBonds() {
   const { data, error } = useSWR("/api/staticdata", fetcher);
-  let placeholder;
 
   //Handle the error state
   if (error) {
@@ -22,30 +21,17 @@ function CompliantBonds() {
   //Handle the ready state and display the result contained in the data object mapped to
 
   var bonds = JSON.parse(data);
-  console.log(Object.keys(bonds.tokens).length);
+  console.log(bonds);
 
-  if (Object.keys(bonds.tokens).length < 3) {
-    return (
-      <ul className="flex space-x-4">
-        {bonds.tokens.map((bond: any) => (
-          <div className="w-96" key={bond.id.toString()}>
-            <CompliantBond bond={bond} />
-          </div>
-        ))}
-        <div className="h-full rounded-lg bg-sable-green-placeholder">
-          <div className="h-full group p-4 lg:p-8 w-[350px]"></div>
-        </div>
-      </ul>
-    );
-  } else {
+  return (
     <ul className="flex space-x-4">
       {bonds.tokens.map((bond: any) => (
         <div className="w-96" key={bond.id.toString()}>
           <CompliantBond bond={bond} />
         </div>
       ))}
-    </ul>; // or any other component or element
-  }
+    </ul>
+  );
 }
 
 export default CompliantBonds;

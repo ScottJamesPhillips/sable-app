@@ -14,7 +14,7 @@ export default function Home() {
         />
         <div className="text-sable-green-text"> SABLE</div>
       </div>
-      <div className="flex text-sable-green-placeholder text-6xl col-start-3 row-start-3 col-span-5 items-end">
+      <div className="flex text-sable-green-secondary-text text-6xl col-start-3 row-start-3 col-span-5 items-end">
         COMPLIANT BONDS
       </div>
       <div className="flex relative col-start-1 row-start-6 col-span-2 row-span-2 ">
