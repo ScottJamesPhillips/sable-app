@@ -2,6 +2,7 @@ import Navbar from "../components/navigation/navbar";
 import Footer from "../components/navigation/footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { ReduxProvider } from "./redux/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-sable-green-page-bg">
       <body className={`${inter.className} foo bg-black-100`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <ReduxProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ReduxProvider>
       </body>
     </html>
   );
