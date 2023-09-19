@@ -14,7 +14,7 @@ function CompliantBonds() {
 
   //Handle the error state
   if (error) {
-    console.log(error);
+    // console.log(error);
     return <div>Failed to load</div>;
   }
   //Handle the loading state
@@ -22,7 +22,7 @@ function CompliantBonds() {
   //Handle the ready state and display the result contained in the data object mapped to
 
   var bonds = JSON.parse(data);
-  console.log(bonds);
+  // console.log(bonds);
 
   if (Object.keys(bonds.tokens).length < 3) {
     return (
