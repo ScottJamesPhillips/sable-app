@@ -3,19 +3,7 @@ import { TbCurrencySolana } from "react-icons/tb";
 import { FaAsterisk } from "react-icons/fa";
 import CompliantBonds from "../components/home/compliant_bonds";
 
-import { showBond } from "./redux/features/displayBondSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, useAppSelector } from "./redux/store";
-
 export default function Home() {
-  const dispatch = useDispatch<AppDispatch>();
-  const isDisplayed = useAppSelector((state) => state.displayBondReducer.value);
-
-  const test = () => {
-    if (!isDisplayed) dispatch(showBond(true));
-    else dispatch(showBond(false));
-  };
-
   return (
     //SP TODO - Maybe more grid rows and shit? Get stuff closer togeteh
     <div className="flex h-screen grid grid-cols-7 grid-rows-5 gap-0 max-h-screen overflow-hidden text-white">
