@@ -2,6 +2,9 @@ import React from "react";
 import { FaNewspaper } from "react-icons/fa";
 import { BsFillBagFill } from "react-icons/bs";
 import { HiOutlineBanknotes } from "react-icons/hi2";
+import { showBond } from "../../../../app/redux/features/displayBondSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, useAppSelector } from "../../../../app/redux/store";
 
 interface CompliantBondProps {
   bond: {
@@ -16,8 +19,18 @@ interface CompliantBondProps {
 }
 
 const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
+  const dispatch = useDispatch<AppDispatch>();
+  const isDisplayed = useAppSelector((state) => state.displayBondReducer.value);
+
+  const displayBond = () => {
+    if (!isDisplayed) dispatch(showBond(true));
+    // else dispatch(showBond(false));
+  };
   return (
-    <div className="h-full rounded-lg bg-sable-green-placeholder">
+    <div
+      className="h-full rounded-lg bg-sable-green-placeholder"
+      onClick={displayBond}
+    >
       <div className="h-full group p-4 lg:p-8">
         <div className="flex items-center gap-x-2 ">
           <div className="bg-sable-green-text aspect-[2/2] w-16 border-[1px] border-sable-green-text rounded-md" />
