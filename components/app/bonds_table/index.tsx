@@ -5,12 +5,12 @@ function BondsTable() {
         <table className="table-auto w-full">
           <thead>
             <tr className="text-sable-green-secondary-text uppercase text-sm leading-normal">
-              <th className="py-3 px-6 text-left">ASSET #ID</th>
+              <th className="py-3 px-6 text-left">{"ASSET #ID"}</th>
               <th className="py-3 px-6 text-left">ISSUE DATE</th>
               <th className="py-3 px-6 text-center">MATURITY</th>
               <th className="py-3 px-6 text-center">APY</th>
-              <th className="py-3 px-6 text-center">TICKET SIZE (N)</th>
-              <th className="py-3 px-6 text-center">PRICE ($)</th>
+              <th className="py-3 px-6 text-center">{"TICKET SIZE (N)"}</th>
+              <th className="py-3 px-6 text-center">{"PRICE ($)"}</th>
               <th className="py-3 px-6 text-center">REMAINING BONDS</th>
             </tr>
           </thead>
@@ -23,27 +23,27 @@ function BondsTable() {
               </td>
               <td className="py-3 px-6 text-left">
                 <div className="flex items-center text-green-500">
-                  <span>XX/YY/ZZZZ</span>
+                  <span>{"XX/YY/ZZZZ"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center text-red-500">
-                  <span>AA/BB/CCCC</span>
+                  <span>{"AA/BB/CCCC"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center">
-                  <span>12.69%</span>
+                  <span>{"12.69%"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center">
-                  <span>50,000$ DARK</span>
+                  <span>{"50,000$ DARK"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center">
-                  <span>$1,000</span>
+                  <span>{"$1,000"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
@@ -55,17 +55,17 @@ function BondsTable() {
             <tr className="bg-sable-green-secondary-text hover:bg-gray-600">
               <td className="py-3 px-6 text-left">
                 <div className="flex items-center">
-                  <span className="font-small">example nft's</span>
+                  <span className="font-small">{"example nft's"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-left">
                 <div className="flex items-center text-green-500">
-                  <span>XX/YY/ZZZZ</span>
+                  <span>{"XX/YY/ZZZZ"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center text-red-500">
-                  <span>AA/BB/CCCC</span>
+                  <span>{"AA/BB/CCCC"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
@@ -75,12 +75,12 @@ function BondsTable() {
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center">
-                  <span>5 NFT'S</span>
+                  <span>{"5 NFT'S"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center">
-                  <span>$400</span>
+                  <span>{"$400"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
@@ -97,27 +97,27 @@ function BondsTable() {
               </td>
               <td className="py-3 px-6 text-left">
                 <div className="flex items-center text-green-500">
-                  <span>XX/YY/ZZZZ</span>
+                  <span>{"XX/YY/ZZZZ"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center text-red-500">
-                  <span>AA/BB/CCCC</span>
+                  <span>{"AA/BB/CCCC"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center">
-                  <span>12.69%</span>
+                  <span>{"12.69%"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center">
-                  <span>50,000$ DARK</span>
+                  <span>{"50,000$ DARK"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
                 <div className="flex items-center">
-                  <span>$1,000</span>
+                  <span>{"$1,000"}</span>
                 </div>
               </td>
               <td className="py-3 px-6 text-center">
