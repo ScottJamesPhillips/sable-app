@@ -23,7 +23,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
   const isDisplayed = useAppSelector((state) => state.displayBondReducer.value);
 
   const displayBond = () => {
-    if (!isDisplayed) dispatch(showBond(true));
+    dispatch(showBond(bond.id.toString()));
     // else dispatch(showBond(false));
   };
   return (

@@ -1,22 +1,30 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+type InitialState = {
+  value: BondDisplayState;
+};
+
 type BondDisplayState = {
-  value: boolean;
+  isOpen: boolean;
+  bondId: string;
 };
 
 const initialState = {
-  value: false,
-} as BondDisplayState;
+  value: { isOpen: false, bondId: "" } as BondDisplayState,
+} as InitialState;
 
 export const displayBond = createSlice({
   name: "displayBond",
   initialState,
   reducers: {
-    showBond: (_, action: PayloadAction<boolean>) => {
-      return { value: action.payload };
+    showBond: (_, action: PayloadAction<string>) => {
+      return { value: { isOpen: true, bondId: action.payload } };
+    },
+    hideBond: () => {
+      return initialState;
     },
   },
 });
 
-export const { showBond } = displayBond.actions;
+export const { showBond, hideBond } = displayBond.actions;
 export default displayBond.reducer;

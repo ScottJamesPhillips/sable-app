@@ -6,10 +6,11 @@ import Bond from "@/components/bond";
 
 function AppHome() {
   const isDisplayed = useAppSelector((state) => state.displayBondReducer.value);
+  console.log("isDisplayed:" + isDisplayed.isOpen);
 
   return (
     <div className="z-1 flex flex-col h-screen grid grid-cols-7 grid-rows-6 gap-0 max-h-screen overflow-hidden text-white">
-      {isDisplayed && <Bond />}
+      {isDisplayed.isOpen && <Bond />}
       <div className="flex row-start-1 col-start-2 col-span-5 justify-between">
         <div>Available Bonds</div>
         <div className="flex">
