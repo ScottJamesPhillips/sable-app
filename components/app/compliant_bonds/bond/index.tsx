@@ -56,6 +56,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
               bondtype
             </label>
             <input
+              readOnly
               type="text"
               id="bondtype"
               value={bond.bondtype}
@@ -71,6 +72,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
               issue date
             </label>
             <input
+              readOnly
               type="text"
               id="issue_date"
               value={bond.issuedate}
@@ -86,6 +88,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
               expiry date
             </label>
             <input
+              readOnly
               type="text"
               id="expiry_date"
               className="p-2 bg-sable-green-page-bg border border-sable-green-secondary-text text-white-900 text-xs rounded-lg block w-full"
@@ -98,6 +101,7 @@ const CompliantBond: React.FC<CompliantBondProps> = ({ bond }) => {
               apy
             </label>
             <input
+              readOnly
               type="text"
               id="apy"
               className="p-2 bg-sable-green-page-bg border border-sable-green-secondary-text text-white-900 text-xs rounded-lg block w-full"
