@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { hideBond } from "@/app/redux/features/displayBondSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, useAppSelector } from "@/app/redux/store";
@@ -7,6 +7,7 @@ import useSWR from "swr";
 import { FaNewspaper } from "react-icons/fa";
 import { BsFillBagFill } from "react-icons/bs";
 import { HiOutlineBanknotes } from "react-icons/hi2";
+import { AiOutlineClose } from "react-icons/ai";
 import QuantityPicker from "./quantity_picker";
 import Slider from "./slider";
 
@@ -39,8 +40,14 @@ function Bond() {
     }
   };
   return (
-    <div className="backdrop-blur-lg fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+    <div className="backdrop-blur-lg fixed inset-0 flex flex-col items-center justify-center z-50 bg-black bg-opacity-50">
       <div className="p-4 rounded-lg shadow-lg xl:h-3/4 xl:w-1/3">
+        <button
+          onClick={closeBond}
+          className="flex mt-2 px-1 py-1 text-white rounded justify-end w-full"
+        >
+          <AiOutlineClose className="text-sable-green-secondary-text hover:bg-green-600" />
+        </button>
         <div className="flex">
           <div className="bg-sable-green-text aspect-[2/2] w-32 border-[1px] border-sable-green-text rounded-md mr-1" />
           <div className="flex flex-col xl:w-80 space-y-4 ml-5">
@@ -66,6 +73,7 @@ function Bond() {
               bondtype
             </label>
             <input
+              readOnly
               type="text"
               id="bondtype"
               value={result.bondtype}
@@ -81,6 +89,7 @@ function Bond() {
               issue date
             </label>
             <input
+              readOnly
               type="text"
               id="issue_date"
               value={result.issuedate}
@@ -96,6 +105,7 @@ function Bond() {
               expiry date
             </label>
             <input
+              readOnly
               type="text"
               id="expiry_date"
               className="p-2 bg-sable-green-page-bg border border-sable-green-secondary-text text-white-900 text-xs rounded-lg block w-full"
@@ -108,6 +118,7 @@ function Bond() {
               apy
             </label>
             <input
+              readOnly
               type="text"
               id="apy"
               className="p-2 bg-sable-green-page-bg border border-sable-green-secondary-text text-white-900 text-xs rounded-lg block w-full"
@@ -148,14 +159,9 @@ function Bond() {
           purchases on this platform.
         </div>
 
-        <Slider />
-
-        <button
-          onClick={closeBond}
-          className="mt-2 px-4 py-2  text-white rounded hover:bg-green-600"
-        >
-          x
-        </button>
+        <div className="flex">
+          <Slider />
+        </div>
       </div>
     </div>
   );
