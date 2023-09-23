@@ -20,6 +20,12 @@ function Bond() {
   const { data, error } = useSWR("/api/staticdata", fetcher);
   let placeholder;
 
+  const [numberTokens, setNumberToken] = useState<number>(0);
+
+  const updateTokenNumber = (number: number) => {
+    setNumberToken(number);
+  };
+
   //Handle the error state
   if (error) {
     // console.log(error);
@@ -150,7 +156,10 @@ function Bond() {
           </a>
         </div>
 
-        <QuantityPicker />
+        <QuantityPicker
+          numberTokens={numberTokens}
+          updateTokenNumber={updateTokenNumber}
+        />
 
         <div className="flex items-center justify-between p-2.5 rounded-lg bg-[#101919] text-sm text-gray-500">
           By purchasing NUMBER x $TOKEN bons you acknowledge and aggree to
