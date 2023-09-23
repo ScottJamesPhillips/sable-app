@@ -1,8 +1,8 @@
 "use client";
 import BondsTable from "@/components/app/bonds_table";
-import CompliantBonds from "@/components/app/compliant_bonds";
+import CompliantBonds from "@/components/app/bond_list";
 import { useAppSelector } from "../redux/store";
-import Bond from "@/components/bond";
+import Bond from "@/components/clicked_bond";
 
 function AppHome() {
   const isDisplayed = useAppSelector((state) => state.displayBondReducer.value);

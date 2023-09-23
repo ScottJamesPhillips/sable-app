@@ -1,16 +1,16 @@
 "use client";
 import { TbCurrencySolana } from "react-icons/tb";
 import { FaAsterisk } from "react-icons/fa";
-import CompliantBonds from "../components/home/compliant_bonds";
+import CompliantBonds from "../components/home/bond_list";
+import { useAppSelector } from "./redux/store";
+import Bond from "@/components/clicked_bond";
 
 export default function Home() {
+  const isDisplayed = useAppSelector((state) => state.displayBondReducer.value);
   return (
     //SP TODO - Maybe more grid rows and shit? Get stuff closer togeteh
     <div className="flex h-screen grid grid-cols-7 grid-rows-5 gap-0 max-h-screen overflow-hidden text-white">
-      {/* <button onClick={test}>HELLO</button>
-      <div>
-        Current display status is: {isDisplayed == true ? "true" : "false"}
-      </div> */}
+      {isDisplayed.isOpen && <Bond />}
       <div className="flex items-center h-1 col-start-3 row-start-2 col-span-4 text-8xl">
         <TbCurrencySolana
           size={350}
