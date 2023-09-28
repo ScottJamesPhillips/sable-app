@@ -1,10 +1,10 @@
 import Navbar from "../components/navigation/navbar";
 import Footer from "../components/navigation/footer";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { ReduxProvider } from "./redux/provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Sable Bonds",
