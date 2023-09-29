@@ -24,12 +24,12 @@ const Navbar = () => {
         <div className="flex justify-end content-center items-center">
           {/* <Logo /> */}
           <ul className="flex gap-x-3 items-center content-center text-sable-green-text">
-            <li className="border-solid border-[1px] border-sable-green-text p-1 rounded-md">
+            <li className="border-solid border-[1px] border-sable-green-text p-2 rounded-md">
               <Link href="/discord">
                 <IoLogoOctocat />
               </Link>
             </li>
-            <li className="border-solid border-[1px] border-sable-green-text p-1 rounded-md">
+            <li className="border-solid border-[1px] border-sable-green-text p-2 rounded-md">
               <Link href="/book">
                 <BiSolidBook />
               </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
             <li className="border-solid border-[1px] border-sable-green-text px-1 rounded-md">
               <Link
                 href="/app"
-                className="flex items-center"
+                className="flex items-center text-[20px]"
                 style={{ fontFamily: "Mono" }}
               >
                 <div className="mx-2">

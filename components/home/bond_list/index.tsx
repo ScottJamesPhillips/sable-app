@@ -35,7 +35,7 @@ function CompliantBonds() {
             </div>
           </div>
         ))}
-        <div className="h-full rounded-lg bg-sable-green-placeholder">
+        <div className="w-96 h-full rounded-lg bg-sable-green-placeholder">
           <div className="h-full group p-4 lg:p-8 w-[350px]"></div>
         </div>
       </ul>
