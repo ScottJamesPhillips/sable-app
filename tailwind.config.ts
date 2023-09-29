@@ -26,7 +26,9 @@ const config: Config = {
         'sable-green-text': '#00FF9F',
         'sable-green-secondary-text':'#253a38',
         'sable-green-placeholder': '#182524',
-        'sable-green-page-bg':'#141D1D'
+        'sable-green-page-bg':'#141D1D',
+        'bond-item-icon-bg':'#43726C',
+        'bond-item-icon-txt':'#00FFCB'
       },
     },
   },

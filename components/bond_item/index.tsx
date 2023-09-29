@@ -33,12 +33,15 @@ const BondItem: React.FC<BondItemProps> = ({ bond }) => {
         <div>
           <div className="flex">
             <h3 className="text-xl text-gray-50">{bond.name}</h3>
-            <div className="flex items-center mx-4 text-l text-gray-500">
+            <div className="flex items-center mx-4 text-l text-sable-green-secondary-text">
               $TOKEN
             </div>
           </div>
           <div className="text-xs text-gray-300">{bond.supply} SUPPLY</div>
-          <a href="" className="text-xs text-gray-500 underline ">
+          <a
+            href=""
+            className="text-xs text-sable-green-secondary-text underline "
+          >
             view on solscan
           </a>
         </div>
@@ -107,21 +110,27 @@ const BondItem: React.FC<BondItemProps> = ({ bond }) => {
         </div>
       </form>
       <div className="flex justify-between text-xs p-2.5">
-        <span className=" flex m-1 ml-0 inline-block text-white-500 items-center">
-          <div className="flex items-center text-green-500 bg-green-800 p-1 rounded-lg">
+        <span className=" flex m-1 ml-0 inline-block text-white-500 items-center text-[0.7rem]">
+          <div className="flex items-center text-bond-item-icon-txt bg-bond-item-icon-bg p-1 rounded-sm">
             <BsFillBagFill />
           </div>
-          +50,000 $TOKEN per Bond
+          <div className="flex px-1">
+            +50,000 <div className="text-bond-item-icon-bg px-1">$TOKEN</div>{" "}
+            per Bond
+          </div>
         </span>
-        <span className="flex m-1 ml-0 inline-block text-white-500 items-center">
-          <div className="flex items-center text-green-500 bg-green-800 p-1 rounded-lg">
+        <span className="flex m-1 ml-0 inline-block text-white-500 items-center text-[0.7rem]">
+          <div className="flex items-center text-bond-item-icon-txt bg-bond-item-icon-bg p-1 rounded-sm">
             <HiOutlineBanknotes />
           </div>
-          -1.25 $SOL per Bond
+          <div className="flex px-1">
+            -1.25 <div className="text-bond-item-icon-bg px-1">$SOL</div> per
+            Bond
+          </div>
         </span>
       </div>
       <div className="flex items-center justify-between p-2.5 rounded-lg bg-[#101919]">
-        <span className="text-sm font-small text-gray-50">
+        <span className="text-[0.75rem] text-gray-50">
           250,000 $TOKEN Supply Remaining
         </span>
         <a className="font-medium text-sable-green-secondary-text transition-all duration-300 group-hover:text-sable-green-placeholder">
