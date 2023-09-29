@@ -14,6 +14,8 @@ const config: Config = {
         '13xl': '13rem',
         '12xl': '12rem',
         '11xl': '11rem',
+        '10xl': '10rem',
+        '7.5xl': '5rem',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

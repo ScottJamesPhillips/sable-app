@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-sable-green-page-bg">
-      <body className={`${inter.className} foo bg-black-100`}>
+      <body className={`${inter.className} foo bg-black-100 no-scrollbar`}>
         <ReduxProvider>
           <Navbar />
           {children}
