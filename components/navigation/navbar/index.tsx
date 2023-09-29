@@ -10,7 +10,7 @@ import "../../../app/globals.css";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-20 bg-sable-green-page-bg top-0 p-5">
+    <div className="flex items-center w-full h-20 bg-sable-green-page-bg top-0 px-5">
       <div className="foo flex justify-between container mx-auto px-5 h-full">
         <a
           href="/"
