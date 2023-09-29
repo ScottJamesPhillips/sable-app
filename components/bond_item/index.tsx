@@ -27,7 +27,7 @@ const BondItem: React.FC<BondItemProps> = ({ bond }) => {
     // else dispatch(showBond(false));
   };
   return (
-    <div onClick={displayBond} className="h-full group p-4 lg:p-8">
+    <div onClick={displayBond} className="h-full group p-4 lg:p-4">
       <div className="flex items-center gap-x-2 ">
         <div className="bg-sable-green-text aspect-[2/2] w-16 border-[1px] border-sable-green-text rounded-md" />
         <div>

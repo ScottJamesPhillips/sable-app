@@ -8,16 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        '15xl': '15.625rem',
+        '14xl': '14rem',
+        '13xl': '13rem',
+        '12xl': '12rem',
+        '11xl': '11rem',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'sable-green-text': '#01ffa0',
+        'sable-green-text': '#00FF9F',
         'sable-green-secondary-text':'#253a38',
         'sable-green-placeholder': '#182524',
-        'sable-green-page-bg':'#141d1d'
+        'sable-green-page-bg':'#141D1D'
       },
     },
   },

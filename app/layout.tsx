@@ -4,7 +4,11 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import { ReduxProvider } from "./redux/provider";
 
-const inter = Montserrat({ subsets: ["latin"], weight: "400" });
+const inter = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Sable Bonds",
