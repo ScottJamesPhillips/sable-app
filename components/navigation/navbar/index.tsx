@@ -4,12 +4,13 @@ import { IoLogoOctocat } from "react-icons/io";
 import { BiSolidBook, BiLaptop } from "react-icons/bi";
 import { FaWallet } from "react-icons/fa";
 import styles from "./Navbar.module.css";
+import "../../../app/globals.css";
 // import Logo from "./Logo";
 // import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-20 bg-sable-green-page-bg top-0">
+    <div className="w-full h-20 bg-sable-green-page-bg top-0 p-5">
       <div className="foo flex justify-between container mx-auto px-5 h-full">
         <a
           href="/"
@@ -34,7 +35,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="border-solid border-[1px] border-sable-green-text px-1 rounded-md">
-              <Link href="/app" className="flex items-center">
+              <Link
+                href="/app"
+                className="flex items-center"
+                style={{ fontFamily: "Mono" }}
+              >
                 <div className="mx-2">
                   <BiLaptop />
                 </div>

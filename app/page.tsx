@@ -40,41 +40,11 @@ export default function Home() {
         <Image src={Asterisk} alt="" width={600} className="flex z-1 mt-5" />
       </div>
 
-      <div className="row-start-4 col-start-3 col-span-7">
+      <div className="row-start- col-start-3 col-span-7">
         <div className="xl:h-84 bg-sable-green-bg row-start-5 col-start-3 col-span-5 row-span-2 p-2 rounded-md m-5 flex items-stretch overflow-x-auto">
           <CompliantBonds />
         </div>
       </div>
-
-      {/* <div className="row-start-4 bg-red-400 w-full ">1</div> */}
-      {/* <div className="row-start-5 bg-red-500 w-full">1</div> */}
-      {/* <div className="row-start-6 bg-red-600 w-full">1</div> */}
-      {/* <div className="row-start-7 bg-red-700 w-full">1</div>
-      <div className="row-start-8 bg-red-800 w-full">1</div>
-      <div className="row-start-9 bg-red-900 w-full">1</div>
-      <div className="row-start-10 bg-red-00 w-full">1</div>
-      <div className="row-start-11 bg-red-600 w-full">1</div>
-      <div className="row-start-12 bg-red-600 w-full">1</div> */}
-      {/* <div className="row-start-7 bg-red-700 w-full">1</div> */}
-      {/* <div
-        className="flex bg-red-100 relative text-9xl items-center h-1 col-start-3 row-start-2
-       col-span-4 text-8xl"
-      >
-        <Image src={SolanaLogo} alt="" />
-        <div className="text-sable-green-text "> SABLE</div>
-      </div> */}
-      {/* <div className="flex text-sable-green-secondary-text text-8xl col-start-3 row-start-2 col-span-5 items-end">
-        COMPLIANT BONDS
-      </div> */}
-      {/* <div className="flex relative col-start-1 row-start-4 col-span-2 row-span-2 ">
-        <FaAsterisk
-          size={350}
-          className="absolute bottom-0 right-0 text-sable-green-text"
-        />
-      </div> */}
-      {/* <div className="xl:h-96 bg-sable-green-bg row-start-5 col-start-3 col-span-5 row-span-2 p-5 rounded-md m-5 flex items-stretch overflow-x-auto">
-        <CompliantBonds />
-      </div> */}
     </div>
   );
 }
