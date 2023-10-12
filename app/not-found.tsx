@@ -1,7 +1,7 @@
 "use client";
-import Navbar from "@/components/navigation/navbar";
+import Navbar from "@/app/components/navigation/navbar";
 import React from "react";
-import Footer from "../components/navigation/footer";
+import Footer from "./components/navigation/footer";
 import "../app/globals.css";
 
 export default function error_404() {

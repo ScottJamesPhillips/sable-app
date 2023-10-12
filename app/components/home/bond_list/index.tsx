@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import useSWR from "swr";
-import BondItem from "@/components/bond_item";
+import BondItem from "@/app/components/bond_item";
 
 //Set up SWR to run the fetcher function when calling "/api/staticdata"
 //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data

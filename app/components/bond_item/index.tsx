@@ -2,9 +2,9 @@ import React from "react";
 import { FaNewspaper } from "react-icons/fa";
 import { BsFillBagFill } from "react-icons/bs";
 import { HiOutlineBanknotes } from "react-icons/hi2";
-import { showBond } from "../../app/redux/features/displayBondSlice";
+import { showBond } from "../../redux/features/displayBondSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, useAppSelector } from "../../app/redux/store";
+import { AppDispatch, useAppSelector } from "../../redux/store";
 
 interface BondItemProps {
   bond: {

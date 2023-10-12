@@ -1,11 +1,9 @@
 "use client";
-import { TbCurrencySolana } from "react-icons/tb";
-import { FaAsterisk } from "react-icons/fa";
-import CompliantBonds from "../components/home/bond_list";
+import CompliantBonds from "./components/home/bond_list";
 import { useAppSelector } from "./redux/store";
-import Bond from "@/components/clicked_bond";
-import SolanaLogo from "../assets/solana-sol-logo.svg";
-import Asterisk from "../assets/Icon awesome-star-of-life.svg";
+import Bond from "@/app/components/clicked_bond";
+import SolanaLogo from "./assets/solana-sol-logo.svg";
+import Asterisk from "./assets/Icon awesome-star-of-life.svg";
 import Image from "next/image";
 
 export default function Home() {

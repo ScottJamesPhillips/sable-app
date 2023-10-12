@@ -1,5 +1,5 @@
-import Navbar from "../components/navigation/navbar";
-import Footer from "../components/navigation/footer";
+import Navbar from "./components/navigation/navbar";
+import Footer from "./components/navigation/footer";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import { ReduxProvider } from "./redux/provider";

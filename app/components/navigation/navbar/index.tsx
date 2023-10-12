@@ -4,7 +4,7 @@ import { IoLogoOctocat } from "react-icons/io";
 import { BiSolidBook, BiLaptop } from "react-icons/bi";
 import { FaWallet } from "react-icons/fa";
 import styles from "./Navbar.module.css";
-import "../../../app/globals.css";
+import "../../../../app/globals.css";
 // import Logo from "./Logo";
 // import Button from "./Button";
 

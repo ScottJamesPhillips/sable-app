@@ -31,7 +31,7 @@
 
 @font-face {
     font-family: 'Mono';
-    src: url('../assets/fonts/MonoRegular.woff2') format('woff2');
+    src: url('./assets/fonts/MonoRegular.woff2') format('woff2');
     /* You can include additional font formats (e.g., woff, ttf) as needed */
     font-weight: normal;
     font-style: normal;
